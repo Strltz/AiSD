@@ -1,0 +1,3 @@
+﻿  task2.cpp
+C:\Users\matus\Desktop\5 семестр\Алгоритмы и структуры данных\Контест 1\task2\task2\task2.cpp(165,16): warning C4267: return: преобразование из "size_t" в "int"; возможна потеря данных
+  task2.vcxproj -> C:\Users\matus\Desktop\5 семестр\Алгоритмы и структуры данных\Контест 1\task2\x64\Debug\task2.exe
