@@ -1,0 +1,36 @@
+﻿  task3.cpp
+C:\Users\matus\Desktop\5 семестр\Алгоритмы и структуры данных\AiSD\contest 2\task3\task3\task3\task3.cpp(129,17): warning C4244: инициализация: преобразование "__int64" в "int", возможна потеря данных
+C:\Users\matus\Desktop\5 семестр\Алгоритмы и структуры данных\AiSD\contest 2\task3\task3\task3\task3.cpp(134,17): warning C4244: инициализация: преобразование "__int64" в "int", возможна потеря данных
+C:\Users\matus\Desktop\5 семестр\Алгоритмы и структуры данных\AiSD\contest 2\task3\task3\task3\task3.cpp(140,29): warning C4244: инициализация: преобразование "_Ty2" в "int", возможна потеря данных
+C:\Users\matus\Desktop\5 семестр\Алгоритмы и структуры данных\AiSD\contest 2\task3\task3\task3\task3.cpp(140,29): warning C4244:         with
+C:\Users\matus\Desktop\5 семестр\Алгоритмы и структуры данных\AiSD\contest 2\task3\task3\task3\task3.cpp(140,29): warning C4244:         [
+C:\Users\matus\Desktop\5 семестр\Алгоритмы и структуры данных\AiSD\contest 2\task3\task3\task3\task3.cpp(140,29): warning C4244:             _Ty2=__int64
+C:\Users\matus\Desktop\5 семестр\Алгоритмы и структуры данных\AiSD\contest 2\task3\task3\task3\task3.cpp(140,29): warning C4244:         ]
+C:\Users\matus\Desktop\5 семестр\Алгоритмы и структуры данных\AiSD\contest 2\task3\task3\task3\task3.cpp(152,27): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\matus\Desktop\5 семестр\Алгоритмы и структуры данных\AiSD\contest 2\task3\task3\task3\task3.cpp(154,29): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\matus\Desktop\5 семестр\Алгоритмы и структуры данных\AiSD\contest 2\task3\task3\task3\task3.cpp(168,51): warning C4018: >=: несоответствие типов со знаком и без знака
+C:\Users\matus\Desktop\5 семестр\Алгоритмы и структуры данных\AiSD\contest 2\task3\task3\task3\task3.cpp(264,26): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+C:\Users\matus\Desktop\5 семестр\Алгоритмы и структуры данных\AiSD\contest 2\task3\task3\task3\task3.cpp(265,29): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\utility(274,54): warning C4244: инициализация: преобразование "_Ty" в "_Ty2", возможна потеря данных
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\utility(274,54): warning C4244:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\utility(274,54): warning C4244:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\utility(274,54): warning C4244:             _Ty=double
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\utility(274,54): warning C4244:         ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\utility(274,54): warning C4244:         and
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\utility(274,54): warning C4244:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\utility(274,54): warning C4244:             _Ty2=__int64
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\utility(274,54): warning C4244:         ]
+  (компиляция исходного файла "task3.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\utility(274,54):
+      контекст создания экземпляра шаблона (сначала самый старый)
+          C:\Users\matus\Desktop\5 семестр\Алгоритмы и структуры данных\AiSD\contest 2\task3\task3\task3\task3.cpp(109,19):
+          выполняется компиляция ссылки на экземпляр шаблон функции "std::pair<bool,__int64>::pair<bool,double,0>(_Other1 &&,_Other2 &&) noexcept"
+          with
+          [
+              _Other1=bool,
+              _Other2=double
+          ]
+              C:\Users\matus\Desktop\5 семестр\Алгоритмы и структуры данных\AiSD\contest 2\task3\task3\task3\task3.cpp(109,17):
+              см. первую ссылку на "std::pair<bool,__int64>::pair" в "Heap::father_index"
+  
+  task3.vcxproj -> C:\Users\matus\Desktop\5 семестр\Алгоритмы и структуры данных\AiSD\contest 2\task3\task3\x64\Debug\task3.exe
