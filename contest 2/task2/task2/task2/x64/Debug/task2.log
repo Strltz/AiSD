@@ -1,4 +1,2 @@
 ﻿  task2.cpp
-C:\Users\matus\Desktop\5 семестр\Алгоритмы и структуры данных\AiSD\contest 2\task2\task2\task2\task2.cpp(362,26): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
-C:\Users\matus\Desktop\5 семестр\Алгоритмы и структуры данных\AiSD\contest 2\task2\task2\task2\task2.cpp(363,29): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
   task2.vcxproj -> C:\Users\matus\Desktop\5 семестр\Алгоритмы и структуры данных\AiSD\contest 2\task2\task2\x64\Debug\task2.exe

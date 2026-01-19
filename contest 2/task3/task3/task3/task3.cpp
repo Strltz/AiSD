@@ -66,23 +66,21 @@ std::vector<std::string> split_for_functions(std::string the_string) {
 }
 
 class TheVertex {
+    friend class Heap;
 public:
-    long long the_key;
-    std::string the_value;
     TheVertex(long long k, std::string v) {
         the_key = k;
         the_value = v;
     }
+
+private:
+    long long the_key;
+    std::string the_value;
+    
 };
 
 class Heap {
-public:
-    std::vector<TheVertex> heap_data;
-
-    Heap() {
-        heap_data = { };
-    }
-
+private:
     void Zig_swap(long long ind_l, long long ind_r) {
         TheVertex copy_l = heap_data[ind_l];
         heap_data[ind_l] = heap_data[ind_r];
@@ -153,6 +151,13 @@ public:
         siftDown(vertex_index);
     }
 
+public:
+    std::vector<TheVertex> heap_data;
+
+    Heap() {
+        heap_data = { };
+    }
+
     std::string add_(long long k, std::string v) {
         bool is_error = false;
         for (size_t i = 0; i < heap_data.size(); ++i) {
@@ -193,35 +198,36 @@ public:
         return "error";
     }
 
-    long long search_(long long k) {
+    std::pair<bool, std::pair<size_t, std::string>> search_(long long k) {
         for (size_t i = 0; i < heap_data.size(); ++i) {
             if (heap_data[i].the_key == k) {
-                return i;
+                return { true, {i, heap_data[i].the_value} };
             }
         }
-        return -1;
+        return { false, {0, ""}};
     }
 
-    int min_() {
-        return 0;
+    std::pair<std::pair<long long, std::string>, size_t> min_() {
+        return { {heap_data[0].the_key, heap_data[0].the_value}, 0 };
     }
 
-    long long max_() {
+    std::pair<std::pair<long long, std::string>, size_t> max_() {
         if (heap_data.size() == 1) {
-            return 0;
+            return { {heap_data[0].the_key, heap_data[0].the_value}, 0 };
         }
-        long long max_index = heap_data.size() - 1;
+        std::string ret;
+        size_t max_index = heap_data.size() - 1;
         for (size_t i = heap_data.size() - 1; i > floor((heap_data.size() - 2) / 2); --i) {
             if (heap_data[i].the_key > heap_data[max_index].the_key) {
                 max_index = i;
             }
         }
-        return max_index;
+        return { {heap_data[max_index].the_key, heap_data[max_index].the_value}, max_index };
     }
 
     std::pair<long long, std::string> extract_() {
         if (heap_data.size() == 0) {
-            return { -1, ""};
+            return { -1, "" };
         }
         std::pair<long long, std::string> root_ = { heap_data[0].the_key, heap_data[0].the_value };
         Zig_swap(0, heap_data.size() - 1);
@@ -230,13 +236,12 @@ public:
         return root_;
     }
 
-    void print_() {
+    void print_(std::ostream& the_out) {
         if (heap_data.size() == 0) {
-            std::cout << "_" << std::endl;
+            the_out << "_\n";
             return;
         }
-        std::cout << '[' << heap_data[0].the_key << ' ' <<
-            heap_data[0].the_value << ']' << std::endl;
+        the_out << "[" << std::to_string(heap_data[0].the_key) << " " << heap_data[0].the_value << "]\n";
         int count_levels = floor(log2(heap_data.size())) + 1;
         int count_for_print = pow(2, count_levels) - 1;
         int level = 1;
@@ -244,26 +249,27 @@ public:
         for (size_t i = 1; i < count_for_print; ++i) {
             if (i <= heap_data.size() - 1) {
                 if (current_vert == i) {
-                    std::cout << '[' << heap_data[current_vert].the_key << ' ' <<
-                        heap_data[current_vert].the_value << ' ' << heap_data[father_index(current_vert)].the_key << ']';
+                    the_out << "[" << std::to_string(heap_data[current_vert].the_key) << " " << heap_data[current_vert].the_value << " "
+                        << std::to_string(heap_data[father_index(current_vert)].the_key) << "]";
                     ++current_vert;
                 }
                 else {
-                    std::cout << '_';
+                    the_out << "_";
                 }
             }
             else {
-                std::cout << '_';
+                the_out << "_";
             }
             if (i == pow(2, level + 1) - 2) {
                 // enter
-                std::cout << std::endl;
+                the_out << "\n";
                 ++level;
             }
             else {
-                std::cout << ' ';
+                the_out << " ";
             }
         }
+        return;
     }
 };
 
@@ -337,8 +343,8 @@ int main()
             }
             else if (this_line[0] == "min" && this_line.size() == 1) {         
                 if (TheHeap.heap_data.size() != 0) {
-                    int min_vertex = TheHeap.min_();
-                    std::cout << TheHeap.heap_data[min_vertex].the_key << ' ' << min_vertex << ' ' << TheHeap.heap_data[min_vertex].the_value << std::endl;
+                    auto ret = TheHeap.min_();
+                    std::cout << ret.first.first << " " << ret.second << " " << ret.first.second << std::endl;
                 }
                 else {
                     std::cout << "error" << std::endl;
@@ -346,28 +352,27 @@ int main()
             }
             else if (this_line[0] == "max" && this_line.size() == 1) {
                 if (TheHeap.heap_data.size() != 0) {
-                    long long max_vertex = TheHeap.max_();
-                    std::cout << TheHeap.heap_data[max_vertex].the_key << ' ' << max_vertex << ' ' << TheHeap.heap_data[max_vertex].the_value << std::endl;
+                    auto max_vertex = TheHeap.max_();
+                    std::cout << max_vertex.first.first << " " << max_vertex.second << " " << max_vertex.first.second << std::endl;
                 }
                 else {
                     std::cout << "error" << std::endl;
                 }
             }
             else if (this_line[0] == "print" && this_line.size() == 1) {
-                TheHeap.print_();
+                TheHeap.print_(std::cout);
             }
             else if (this_line[0] == "search" && this_line.size() == 2) {
                 if (TheHeap.heap_data.size() == 0) {
                     std::cout << "0" << std::endl;
                 }
                 else {
-                    long long this_index = TheHeap.search_(std::stoll(this_line[1]));
-                    if (this_index != -1) {
-                        TheHeap.search_(std::stoll(this_line[1]));
-                        std::cout << "1" << ' ' << this_index << ' ' << TheHeap.heap_data[this_index].the_value << std::endl;
+                    auto this_index = TheHeap.search_(std::stoll(this_line[1]));
+                    if (this_index.first) {
+                        std::cout << "1 " << this_index.second.first << " " << this_index.second.second << std::endl;
                     }
                     else {
-                        std::cout << '0' << std::endl;
+                        std::cout << "0" << std::endl;
                     }
                 }
             }

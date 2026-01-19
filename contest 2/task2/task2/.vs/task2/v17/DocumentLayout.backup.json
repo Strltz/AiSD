@@ -3,6 +3,9 @@
   "WorkspaceRootPath": "C:\\Users\\matus\\Desktop\\5 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0410\u043B\u0433\u043E\u0440\u0438\u0442\u043C\u044B \u0438 \u0441\u0442\u0440\u0443\u043A\u0442\u0443\u0440\u044B \u0434\u0430\u043D\u043D\u044B\u0445\\AiSD\\contest 2\\task2\\task2\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\matus\\Desktop\\5 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0410\u043B\u0433\u043E\u0440\u0438\u0442\u043C\u044B \u0438 \u0441\u0442\u0440\u0443\u043A\u0442\u0443\u0440\u044B \u0434\u0430\u043D\u043D\u044B\u0445\\AiSD\\contest 2\\task3\\task3\\task3\\task3.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{543DD9DC-AF6C-41F7-A9A0-E984F7BB94CF}|task2\\task2.vcxproj|C:\\Users\\matus\\Desktop\\5 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0410\u043B\u0433\u043E\u0440\u0438\u0442\u043C\u044B \u0438 \u0441\u0442\u0440\u0443\u043A\u0442\u0443\u0440\u044B \u0434\u0430\u043D\u043D\u044B\u0445\\AiSD\\contest 2\\task2\\task2\\task2\\task2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{543DD9DC-AF6C-41F7-A9A0-E984F7BB94CF}|task2\\task2.vcxproj|solutionrelative:task2\\task2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
@@ -19,12 +22,25 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "task3.cpp",
+              "DocumentMoniker": "C:\\Users\\matus\\Desktop\\5 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0410\u043B\u0433\u043E\u0440\u0438\u0442\u043C\u044B \u0438 \u0441\u0442\u0440\u0443\u043A\u0442\u0443\u0440\u044B \u0434\u0430\u043D\u043D\u044B\u0445\\AiSD\\contest 2\\task3\\task3\\task3\\task3.cpp",
+              "RelativeDocumentMoniker": "..\\..\\task3\\task3\\task3\\task3.cpp",
+              "ToolTip": "C:\\Users\\matus\\Desktop\\5 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0410\u043B\u0433\u043E\u0440\u0438\u0442\u043C\u044B \u0438 \u0441\u0442\u0440\u0443\u043A\u0442\u0443\u0440\u044B \u0434\u0430\u043D\u043D\u044B\u0445\\AiSD\\contest 2\\task3\\task3\\task3\\task3.cpp",
+              "RelativeToolTip": "..\\..\\task3\\task3\\task3\\task3.cpp",
+              "ViewState": "AgIAAOcAAAAAAAAAAAAAAPQAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-01-10T18:58:59.206Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "task2.cpp",
               "DocumentMoniker": "C:\\Users\\matus\\Desktop\\5 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0410\u043B\u0433\u043E\u0440\u0438\u0442\u043C\u044B \u0438 \u0441\u0442\u0440\u0443\u043A\u0442\u0443\u0440\u044B \u0434\u0430\u043D\u043D\u044B\u0445\\AiSD\\contest 2\\task2\\task2\\task2\\task2.cpp",
               "RelativeDocumentMoniker": "task2\\task2.cpp",
               "ToolTip": "C:\\Users\\matus\\Desktop\\5 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u0410\u043B\u0433\u043E\u0440\u0438\u0442\u043C\u044B \u0438 \u0441\u0442\u0440\u0443\u043A\u0442\u0443\u0440\u044B \u0434\u0430\u043D\u043D\u044B\u0445\\AiSD\\contest 2\\task2\\task2\\task2\\task2.cpp",
               "RelativeToolTip": "task2\\task2.cpp",
-              "ViewState": "AgIAAHEBAAAAAAAAAAAUwMIBAAA/AAAAAAAAAA==",
+              "ViewState": "AgIAAAYCAAAAAAAAAAAAABECAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-11-27T19:16:06.066Z",
               "EditorCaption": ""

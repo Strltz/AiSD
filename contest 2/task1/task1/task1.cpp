@@ -360,6 +360,7 @@ int main()
     bool is_prev_line_empty = false;
     TheVertex* root = new TheVertex(0, "");
     int count_vertex = 0;
+    
     while (std::getline(std::cin, str_enter)) {
         if (str_enter.empty() && is_prev_line_empty) {
             break;
@@ -370,6 +371,7 @@ int main()
         }
         else
         {
+            std::cout << "---";
             is_prev_line_empty = false;
             std::vector<std::string> this_line = split_space(str_enter);
             
