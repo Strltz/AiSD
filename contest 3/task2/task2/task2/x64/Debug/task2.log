@@ -1,7 +1,16 @@
 ﻿  task2.cpp
 C:\Users\matus\Desktop\5 семестр\Алгоритмы и структуры данных\AiSD\contest 3\task2\task2\task2\task2.cpp(6,20): warning C4244: инициализация: преобразование "double" в "__int64", возможна потеря данных
-C:\Users\matus\Desktop\5 семестр\Алгоритмы и структуры данных\AiSD\contest 3\task2\task2\task2\task2.cpp(132,30): warning C4018: <: несоответствие типов со знаком и без знака
-C:\Users\matus\Desktop\5 семестр\Алгоритмы и структуры данных\AiSD\contest 3\task2\task2\task2\task2.cpp(138,30): warning C4018: <: несоответствие типов со знаком и без знака
-C:\Users\matus\Desktop\5 семестр\Алгоритмы и структуры данных\AiSD\contest 3\task2\task2\task2\task2.cpp(183,45): warning C4244: =: преобразование "double" в "__int64", возможна потеря данных
-C:\Users\matus\Desktop\5 семестр\Алгоритмы и структуры данных\AiSD\contest 3\task2\task2\task2\task2.cpp(184,45): warning C4244: =: преобразование "double" в "__int64", возможна потеря данных
+C:\Users\matus\Desktop\5 семестр\Алгоритмы и структуры данных\AiSD\contest 3\task2\task2\task2\task2.cpp(53,22): warning C4244: =: преобразование "__int64" в "int", возможна потеря данных
+C:\Users\matus\Desktop\5 семестр\Алгоритмы и структуры данных\AiSD\contest 3\task2\task2\task2\task2.cpp(79,29): warning C4244: аргумент: преобразование "double" в "const unsigned __int64", возможна потеря данных
+C:\Users\matus\Desktop\5 семестр\Алгоритмы и структуры данных\AiSD\contest 3\task2\task2\task2\task2.cpp(80,22): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\matus\Desktop\5 семестр\Алгоритмы и структуры данных\AiSD\contest 3\task2\task2\task2\task2.cpp(88,22): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\matus\Desktop\5 семестр\Алгоритмы и структуры данных\AiSD\contest 3\task2\task2\task2\task2.cpp(99,22): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\matus\Desktop\5 семестр\Алгоритмы и структуры данных\AiSD\contest 3\task2\task2\task2\task2.cpp(111,30): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\matus\Desktop\5 семестр\Алгоритмы и структуры данных\AiSD\contest 3\task2\task2\task2\task2.cpp(121,30): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\matus\Desktop\5 семестр\Алгоритмы и структуры данных\AiSD\contest 3\task2\task2\task2\task2.cpp(127,30): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\matus\Desktop\5 семестр\Алгоритмы и структуры данных\AiSD\contest 3\task2\task2\task2\task2.cpp(166,45): warning C4244: =: преобразование "double" в "__int64", возможна потеря данных
+C:\Users\matus\Desktop\5 семестр\Алгоритмы и структуры данных\AiSD\contest 3\task2\task2\task2\task2.cpp(167,45): warning C4244: =: преобразование "double" в "__int64", возможна потеря данных
+C:\Users\matus\Desktop\5 семестр\Алгоритмы и структуры данных\AiSD\contest 3\task2\task2\task2\task2.cpp(174,75): warning C4244: аргумент: преобразование "__int64" в "int", возможна потеря данных
+C:\Users\matus\Desktop\5 семестр\Алгоритмы и структуры данных\AiSD\contest 3\task2\task2\task2\task2.cpp(174,61): warning C4244: аргумент: преобразование "__int64" в "int", возможна потеря данных
+C:\Users\matus\Desktop\5 семестр\Алгоритмы и структуры данных\AiSD\contest 3\task2\task2\task2\task2.cpp(92,1): warning C4715: FilterBloom::set_bit: значение возвращается не при всех путях выполнения
   task2.vcxproj -> C:\Users\matus\Desktop\5 семестр\Алгоритмы и структуры данных\AiSD\contest 3\task2\task2\x64\Debug\task2.exe
